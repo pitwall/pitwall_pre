@@ -1,0 +1,4 @@
+pit_wall_pagina_principal:
+    resource: "@PitWallPaginaPrincipalBundle/Resources/config/routing.yml"
+    prefix:   /
+
