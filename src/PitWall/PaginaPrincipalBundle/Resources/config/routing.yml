@@ -1,7 +1,3 @@
-pit_wall_pagina_principal_homepage:
+portada:
     pattern:  /
     defaults: { _controller: PitWallPaginaPrincipalBundle:Default:index }
-
-pit_wall_pagina_principal_contacto:
-    pattern:  /contacto
-    defaults: { _controller: PitWallPaginaPrincipalBundle:Default:contacto }

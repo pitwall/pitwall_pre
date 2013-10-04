@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e67df720e8a1a2e0e6df41d91d788e48",
+    "hash": "178c00e98711d524d1108eec103edd64",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -838,6 +838,61 @@
             "time": "2013-07-28 22:38:30"
         },
         {
+            "name": "pdepend/pdepend",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pdepend/pdepend.git",
+                "reference": "6fcfb7666c95f341b42f02c94a47b3a51ed484e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/6fcfb7666c95f341b42f02c94a47b3a51ed484e0",
+                "reference": "6fcfb7666c95f341b42f02c94a47b3a51ed484e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.3"
+            },
+            "bin": [
+                "src/bin/pdepend"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Official version of pdepend to be handled with Composer",
+            "time": "2013-07-25 19:23:48"
+        },
+        {
+            "name": "phpmd/phpmd",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpmd/phpmd.git",
+                "reference": "7d03a50e937811970751697ad1aea33a1089d66f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/7d03a50e937811970751697ad1aea33a1089d66f",
+                "reference": "7d03a50e937811970751697ad1aea33a1089d66f",
+                "shasum": ""
+            },
+            "require": {
+                "pdepend/pdepend": "*",
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "src/bin/phpmd"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "../../pdepend/pdepend/src/main/php",
+                "src/main/php"
+            ],
+            "description": "Official version of PHPMD handled with Composer.",
+            "time": "2012-12-14 12:25:09"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1130,21 +1185,20 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.2.0",
+            "version": "v1.0.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
+                "reference": "cac3fdfb111adbe590155f491594636d45129783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
-                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
+                "reference": "cac3fdfb111adbe590155f491594636d45129783",
                 "shasum": ""
             },
             "require": {
-                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -1174,7 +1228,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:58"
+            "time": "2013-06-03 18:32:07"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1446,16 +1500,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.13.2",
+            "version": "v1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "6d6a1009427d1f398c9d40904147bf9f723d5755"
+                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/6d6a1009427d1f398c9d40904147bf9f723d5755",
-                "reference": "6d6a1009427d1f398c9d40904147bf9f723d5755",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/224fc55635d544a2ec8edb3592be18db5a093f59",
+                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59",
                 "shasum": ""
             },
             "require": {
@@ -1464,7 +1518,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.14-dev"
                 }
             },
             "autoload": {
@@ -1491,7 +1545,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-08-03 15:35:31"
+            "time": "2013-10-03 06:41:20"
         }
     ],
     "packages-dev": [

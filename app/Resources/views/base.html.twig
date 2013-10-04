@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}{% endblock %} | Pit-Wall</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
+    <body id="{% block id '' %}">
+        {% include '::header.html.twig' %}
         {% block body %}{% endblock %}
+        {% include '::footer.html.twig' %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+
+

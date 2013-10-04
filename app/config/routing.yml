@@ -1,4 +1,8 @@
-pit_wall_pagina_principal:
+pagina_estatica:
+    resource: "@PitWallPaginasEstaticasBundle/Resources/config/routing.yml"
+    prefix:   /
+
+portada:
     resource: "@PitWallPaginaPrincipalBundle/Resources/config/routing.yml"
     prefix:   /
 

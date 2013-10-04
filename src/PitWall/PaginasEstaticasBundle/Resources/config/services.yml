@@ -1,0 +1,7 @@
+parameters:
+#    pit_wall_paginas_estaticas.example.class: PitWall\PaginasEstaticasBundle\Example
+
+services:
+#    pit_wall_paginas_estaticas.example:
+#        class: %pit_wall_paginas_estaticas.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
